@@ -1,0 +1,75 @@
+
+@import 'scss/bootstrap.scss';
+
+$new-primary: $orange; // assegniamo il nuovo primary ad un orange preso dalle variables
+$new-warning: $pink;
+
+// ridefiniamo $theme-colors, ovvero la mappa in cui dentro il partial _variables vengono assegnati tutti i colori principali
+$new-theme-colors: (
+  'primary': $new-primary,
+  'warning': $new-warning,
+  'info': #cec288,
+);
+
+// ora vado a "fondere" insieme $new-theme-colors con l'originale $theme-colors
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+// ho riassegnato un nuovo valore a $theme-colors, iniettando il mio nuovo primary e lasciando intatti gli altri colori
+
+$new-spacers: (
+  5: $spacer * 30,
+  // creiamoci un nuovo valore!
+  6: $spacer * 50,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+$bg-netflix: #141414;
+
+.bg-netflix{
+  background-color: $bg-netflix;
+}
+
+#logo img{
+  width: 7em;
+}
+
+nav{
+  height: 5rem;
+}
+
+#avatar{
+  width: 2rem;
+}
+
+#filter{
+  background-color: $bg-netflix;
+}
+
+.col img{
+  transition: transform 0.2s linear;
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+$netflix-grey:#808080;
+
+footer div i{
+  color: $netflix-grey;
+}
+
+#footer-text{
+  color: $netflix-grey;
+}
+
+footer div button{
+  background-color: $bg-netflix;
+  color: $netflix-grey;
+  border: 1px solid $netflix-grey;
+}
+
+footer p{
+  color: $netflix-grey;
+}
