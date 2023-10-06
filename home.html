@@ -11,12 +11,12 @@
     />
   </head>
   <body class="bg-netflix mx-5">
-    <header>
+    <header class="mb-5">
       <nav class="d-flex align-items-center">
         <div id="logo">
-          <img src="assets/netflix_logo.png" alt="logo" class="mb-3" />
+          <img src="assets/netflix_logo.png" alt="logo" class="mb-3 ps-0" />
         </div>
-        <ul class="list-unstyled text-white d-flex">
+        <ul class="list-unstyled text-white d-flex ms-3">
           <li class="me-3">Home</li>
           <li class="me-3 fw-bold">TV Shows</li>
           <li class="me-3">Movies</li>
@@ -25,7 +25,7 @@
         </ul>
         <div
           id="nav-right"
-          class="d-flex flex-grow-1 justify-content-end align-items-center text-white me-5"
+          class="d-flex flex-grow-1 justify-content-end align-items-center text-white"
         >
           <i class="bi bi-search me-3"></i>
           <span class="text-white me-3">KIDS</span>
@@ -34,7 +34,7 @@
           <i class="bi bi-caret-down-fill text-white ms-1 fs-6"></i>
         </div>
       </nav>
-      <div id="buttom-nav" class="d-flex align-items-center">
+      <div id="buttom-nav" class="d-flex align-items-center d-block">
         <div id="b-nav-left" class="d-flex align-items-center">
           <h1 class="d-inline text-white">TV Shows</h1>
           <select name="filter" id="filter" class="text-white ms-5 py-1 px-2">
@@ -43,19 +43,14 @@
             <option value="3">Filter 3</option>
           </select>
         </div>
-        <div
-          id="b-nav-right"
-          class="d-flex flex-grow-1 justify-content-end me-5"
-        >
-          <i
-            class="bi bi-filter-left text-white me-0 border border-1 px-1 me-0"
-          ></i>
+        <div id="b-nav-right" class="d-flex flex-grow-1 justify-content-end">
+          <i class="bi bi-filter-left text-white me-0 border border-1 px-1"></i>
           <i class="bi bi-grid-fill text-white border border-1 px-1 ms-0"></i>
         </div>
       </div>
     </header>
     <main class="mx5">
-      <h3 class="text-white mt-3 mb-3">Trending Now</h3>
+      <h3 class="text-white mt-3 mb-3 mt-5">Trending Now</h3>
       <div class="container-fluid">
         <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6">
           <div class="col gx-1">
@@ -78,7 +73,7 @@
           </div>
         </div>
       </div>
-      <h3 class="text-white ms-5 mt-3 mb-3">Watch It Again</h3>
+      <h3 class="text-white mt-3 mb-3">Watch It Again</h3>
       <div class="container-fluid">
         <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6">
           <div class="col gx-1">
@@ -101,7 +96,7 @@
           </div>
         </div>
       </div>
-      <h3 class="text-white ms-5 mt-3 mb-3">New Releases</h3>
+      <h3 class="text-white mt-3 mb-3">New Releases</h3>
       <div class="container-fluid">
         <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6">
           <div class="col gx-1">

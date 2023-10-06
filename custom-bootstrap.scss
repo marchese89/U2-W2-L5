@@ -38,7 +38,7 @@ nav{
   height: 5rem;
 }
 
-#avatar{
+#avatar,.avatar{
   width: 2rem;
 }
 
@@ -173,4 +173,35 @@ section input[type="text"]{
 }
 .checkbox-wrapper input:checked ~ .checkmark::after {
   display: block;
+}
+
+nav{
+  background-color: $bg-netflix;
+  ul{
+    li{
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  #logo{
+    margin-left: -0.7em;
+  }
+}
+
+a{
+  color: #4c85b3;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+h6{
+  color: #b3b3b3;
+}
+
+#uhd{
+  border: 2px solid black;
+  padding: 0.1em;
 }

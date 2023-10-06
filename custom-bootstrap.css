@@ -11988,7 +11988,7 @@ nav {
   height: 5rem;
 }
 
-#avatar {
+#avatar, .avatar {
   width: 2rem;
 }
 
@@ -12119,4 +12119,31 @@ section input[type=text] {
 
 .checkbox-wrapper input:checked ~ .checkmark::after {
   display: block;
+}
+
+nav {
+  background-color: #141414;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+nav #logo {
+  margin-left: -0.7em;
+}
+
+a {
+  color: #4c85b3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h6, .h6 {
+  color: #b3b3b3;
+}
+
+#uhd {
+  border: 2px solid black;
+  padding: 0.1em;
 }/*# sourceMappingURL=custom-bootstrap.css.map */
